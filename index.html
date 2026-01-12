@@ -13,18 +13,24 @@
 	    p.innerText = "Added by JS";
 	    box.appendChild(p);
     }
+    function clickHandler2() {
+            const box = document.getElementById("box");
+            const p = document.createElement("p");
+            p.innerText = "Added by JS2";
+            box.appendChild(p);
+    }
   </script>
   </head>
   <body>
     <h1>Hello HTML</h1>
     <p>
       My first 
-<a href="https://html.spec.whatwg.org">
-HTML
-</a>.
+      <a href="https://html.spec.whatwg.org">
+	      HTML
+      </a>.
     </p>
     <button onclick="clickHandler()">JS</button>
-    <button onclick="clickHandler()">JS2</button>
+    <button onclick="clickHandler2()">JS2</button>
     <div id="box"></div>
   </body>
 </html>
